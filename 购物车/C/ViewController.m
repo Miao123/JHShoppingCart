@@ -492,12 +492,21 @@
                                 }
                             }];
                         }
+                        for (NSMutableDictionary *dict in _menuArr) {
+                            dict[@"number"] = @"0";
+                            [self.menuDataArr addObject:[MenuModel modelWithDict:dict]];
+                        }
+                        for (MenuModel *model in _menuDataArr) {
+                            model.number = @"0";
+                        }
+                        [_menuTable reloadData];
                     }
                     [self.ejectDataArr removeAllObjects];
                     _allPriceLabel.text = @"合计:¥0.0";
                     _sendLabel.text = [NSString stringWithFormat:@"¥20起送"];
                     [self.shoppBtn setTitle:[NSString stringWithFormat:@""] forState:0];
                     _totalNumber = 0;
+                    _leftCount = 0;
                     _totalPrice = 0;
                 }
             }];

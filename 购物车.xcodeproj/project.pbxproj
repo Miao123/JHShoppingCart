@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76032FB41F4D749E0028238C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76032FB31F4D749E0028238C /* ViewController.m */; };
 		DD516AF41EC9ABBE005A3565 /* MenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DD516AF31EC9ABBE005A3565 /* MenuModel.m */; };
 		DD516B171EC9B83C005A3565 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DD516AF71EC9B83C005A3565 /* MKAnnotationView+WebCache.m */; };
 		DD516B181EC9B83C005A3565 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = DD516AF91EC9B83C005A3565 /* NSData+ImageContentType.m */; };
@@ -26,7 +27,6 @@
 		DD516B261EC9B83C005A3565 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DD516B161EC9B83C005A3565 /* UIView+WebCacheOperation.m */; };
 		DD6D82CC1EC551AE00092775 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6D82CB1EC551AE00092775 /* main.m */; };
 		DD6D82CF1EC551AE00092775 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6D82CE1EC551AE00092775 /* AppDelegate.m */; };
-		DD6D82D21EC551AE00092775 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6D82D11EC551AE00092775 /* ViewController.m */; };
 		DD6D82D51EC551AE00092775 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD6D82D31EC551AE00092775 /* Main.storyboard */; };
 		DD6D82D71EC551AE00092775 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD6D82D61EC551AE00092775 /* Assets.xcassets */; };
 		DD6D82DA1EC551AE00092775 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD6D82D81EC551AE00092775 /* LaunchScreen.storyboard */; };
@@ -66,6 +66,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		76032FB21F4D749E0028238C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		76032FB31F4D749E0028238C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DD516AF21EC9ABBE005A3565 /* MenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuModel.h; sourceTree = "<group>"; };
 		DD516AF31EC9ABBE005A3565 /* MenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuModel.m; sourceTree = "<group>"; };
 		DD516AF61EC9B83C005A3565 /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
@@ -105,8 +107,6 @@
 		DD6D82CB1EC551AE00092775 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DD6D82CD1EC551AE00092775 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DD6D82CE1EC551AE00092775 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DD6D82D01EC551AE00092775 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
-		DD6D82D11EC551AE00092775 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
 		DD6D82D41EC551AE00092775 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD6D82D61EC551AE00092775 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD6D82D91EC551AE00092775 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -172,6 +172,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76032FB11F4D749E0028238C /* C */ = {
+			isa = PBXGroup;
+			children = (
+				76032FB21F4D749E0028238C /* ViewController.h */,
+				76032FB31F4D749E0028238C /* ViewController.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
 		DD516AF51EC9B83C005A3565 /* SDWebImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,11 +244,11 @@
 		DD6D82C91EC551AE00092775 /* 购物车 */ = {
 			isa = PBXGroup;
 			children = (
+				76032FB11F4D749E0028238C /* C */,
 				DD9F86461ECADC9200B26B12 /* Other */,
 				DD516AF51EC9B83C005A3565 /* SDWebImage */,
 				DD6D83111EC5B69C00092775 /* Category */,
 				DD6D83011EC55A5700092775 /* Basic */,
-				DD6D82FE1EC55A2100092775 /* C */,
 				DD6D82FF1EC55A2100092775 /* M */,
 				DD6D83001EC55A2100092775 /* V */,
 				DD6D82CD1EC551AE00092775 /* AppDelegate.h */,
@@ -277,15 +286,6 @@
 				DD6D82F11EC551AE00092775 /* Info.plist */,
 			);
 			path = "购物车UITests";
-			sourceTree = "<group>";
-		};
-		DD6D82FE1EC55A2100092775 /* C */ = {
-			isa = PBXGroup;
-			children = (
-				DD6D82D01EC551AE00092775 /* ViewController.h */,
-				DD6D82D11EC551AE00092775 /* ViewController.m */,
-			);
-			path = C;
 			sourceTree = "<group>";
 		};
 		DD6D82FF1EC55A2100092775 /* M */ = {
@@ -504,7 +504,6 @@
 				DD97BD1F1ECD9586006FD0E5 /* ShopTableCell.m in Sources */,
 				DD6D831A1EC5B69C00092775 /* UIColor+Hex.m in Sources */,
 				DD6D831C1EC5B69C00092775 /* UIView+NJ.m in Sources */,
-				DD6D82D21EC551AE00092775 /* ViewController.m in Sources */,
 				DD516B1A1EC9B83C005A3565 /* SDWebImageCompat.m in Sources */,
 				DD516B181EC9B83C005A3565 /* NSData+ImageContentType.m in Sources */,
 				DD6D82CF1EC551AE00092775 /* AppDelegate.m in Sources */,
@@ -516,6 +515,7 @@
 				DD516B211EC9B83C005A3565 /* UIImage+GIF.m in Sources */,
 				DD6D82CC1EC551AE00092775 /* main.m in Sources */,
 				DD516B1F1EC9B83C005A3565 /* SDWebImagePrefetcher.m in Sources */,
+				76032FB41F4D749E0028238C /* ViewController.m in Sources */,
 				DD516B201EC9B83C005A3565 /* UIButton+WebCache.m in Sources */,
 				DD516B221EC9B83C005A3565 /* UIImage+MultiFormat.m in Sources */,
 				DD516B1B1EC9B83C005A3565 /* SDWebImageDecoder.m in Sources */,
